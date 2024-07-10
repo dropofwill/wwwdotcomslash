@@ -1,9 +1,9 @@
----
-title: rtasklib first release
-date: 2015-05-19T14:31:00Z
-tags: Ruby, rtasklib, LinuxDev, Business and Legal
++++
+title = "rtasklib first release"
+date = 2015-05-19T14:31:00Z
+tags = ["Ruby", "rtasklib", "LinuxDev", "Business and Legal"]
 
----
++++
 
 So the semester has come to a close and I've made the first 'official' release of `rtasklib`. Install the gem [from RubyGems.org](https://rubygems.org/gems/rtasklib) (`gem install rtasklib`) or [install the RPM on your Fedora system if you prefer](https://github.com/dropofwill/rtasklib/tree/master/rpms). I reached out to the TaskWarrior devs and they also are adding `rtasklib` to the list of [available libraries on the TaskWarrior main website in the next few days](http://taskwarrior.org/tools/#libraries), which is pretty cool.
 

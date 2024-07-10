@@ -1,9 +1,9 @@
----
-title: Sankey diagram of rule distributions for word sense disambiguation
-date: 2014-11-15T06:14:00Z
-tags: NLP, Semantics, Data Viz
++++
+title = "Sankey diagram of rule distributions for word sense disambiguation"
+date = 2014-11-15T06:14:00Z
+tags = ["NLP", "Semantics", "Data Viz"]
 
----
++++
 
 Crazy long title, I know, but it's not as complicated as it sounds. For my Natural Language Processing class we recently approached the problem of Word Sense Disambiguation from a Machine Learning perspective (we also looked at others, including lookup approaches like Lesk), using the simple, but effective, decision list algorithm. This is my attempt at visualizing the results.
 
@@ -31,10 +31,10 @@ Given this list of rules with their relative ranks we can sort them by log likel
       |  a  a |         |  a  a |
       |  s  s |         |  k  k |
       |  s  s |         |  e  e |
-------+-------+   ------+-------+
++++++++++++++-+   +++++++++++++-+
 bass* |<40> 4 |   sake* | <3> 3 |
 bass  | 4 <52>|   sake  |   <94>|
-------+-------+   ------+-------+
++++++++++++++-+   +++++++++++++-+
 (row = reference, col = response)
 
 Confusion matrices for both cases. The rows are what the answers should have been, columns are what the algorithm chose, so choices along the diagonal are correct.

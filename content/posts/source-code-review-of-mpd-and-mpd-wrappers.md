@@ -1,9 +1,9 @@
----
-title: Initial thoughts for an MPD project
-date: 2015-02-05T21:30:00Z
-tags: LinuxDev, Business and Legal, Ruby
++++
+title = "Initial thoughts for an MPD project"
+date = 2015-02-05T21:30:00Z
+tags = ["LinuxDev", "Business and Legal", "Ruby"]
 
----
++++
 
 For my Software Development in Linux class we are making one large project over the course of the class and then packaging it up for distribution at the end (probably Debian, RPM, and AUR).  This is a little bit of a paradigm shift for me personally, as for most of my projects distribution means pushing to a Heroku instance, so I've had to brain storm some new non-web-based projects. I've come up with two basic trains of thought either a better time-tracking/Freshbooks integration for taskwarrior (the current ones are all bare-bones) or any number of music/analytics ideas for the music players, specifically MPD.
 

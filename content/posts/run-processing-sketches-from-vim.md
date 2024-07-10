@@ -1,9 +1,9 @@
----
-title: Run Processing Sketches from Vim
-date: 2014-09-08T03:09:00Z
-tags: Vim, Processing
++++
+title = "Run Processing Sketches from Vim"
+date = 2014-09-08T03:09:00Z
+tags = ["Vim", "Processing"]
 
----
++++
 
 So I started writing Processing for one of my classes (Interactive Media Development) and unfortunately the default development workflow they want us to use is tightly bound to the IDE that it ships with. In general I'm not a huge fan of IDEs anyways, but the Processing one is especially terrible. It's obviously been designed to abstract away programming concepts to make the barrier to entry really low (I think it was originally made to help artist make procedural art), but in the end this makes for an annoying experience for those of us with a bit of experience.
 

@@ -1,9 +1,9 @@
----
-title: "rtasklib update march 16th"
-date: 2015-03-16T04:02:00Z
-tags: LinuxDev, Ruby, rtasklib
++++
+title = "rtasklib update march 16th"
+date = 2015-03-16T04:02:00Z
+tags = ["LinuxDev", "Ruby", "rtasklib"]
 
----
++++
 
 Over the last couple of weeks the overall architecture has been in a state of flux as I have been swapping pieces in out to see what will work best. Now as I approach my original milestone for having this in a working condition things are starting to fall into place. Models for tasks and configuration are pretty much stable, initialization of the configuration is done, and validation and serialization of tasks are coming along. The main bit of work left to do is writing the controllers to hook all of the components together and will effectively make up the public interface for the library.
 

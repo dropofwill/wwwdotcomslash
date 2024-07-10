@@ -1,9 +1,9 @@
----
-title: Playing power chords on an Arduino
-date: 2015-04-14T01:13:00Z
-tags: Physical Computing, Arduino
++++
+title = "Playing power chords on an Arduino"
+date = 2015-04-14T01:13:00Z
+tags = ["Physical Computing", "Arduino"]
 
----
++++
 
 Play power chords with an Arduino, capacitive touch pads, and a couple of speakers.
 

@@ -1,9 +1,9 @@
----
-title: "task_time update March 1st"
-date: 2015-03-02T02:16:00Z
-tags: LinuxDev, Ruby, task_time, rtasklib
++++
+title = "task_time update March 1st"
+date = 2015-03-02T02:16:00Z
+tags = ["LinuxDev", "Ruby", "task_time", "rtasklib"]
 
----
++++
 
 [Last week](/2015/02/22/a-comparison-of-task-warrior-wrappers.html.markdown) I talked about picking an appropriate TaskWarrior wrapper for my `task_time` project. A rundown of the options are `taskw` (Python, GPL, low on documentation, durations not implemented yet), `tasklib` (Python, BSD, good documentation, durations not implemented, does not read in users `.taskrc`), and `taskwarrior` (Ruby, MIT, just does JSON marshalling/unmarshalling). In the end I decided none of these were actually going to cut it, since none implemented duration features, so my choices were to either Fork and implement durations and whatever other features were needed or to roll my own. In the end I really would rather use Ruby for this so I decided that it would be good to write the wrapper from scratch, while taking cues from each of the other implementations. I named the repo `rtasklib` in following with the ruby convention of naming wrappers with lib and either a leading `r` or trailing `_ruby` (dashes imply a subclass and are only used when your're gem extends an existing gem not an external program). You can find the repo at [`dropofwill/rtasklib`](http://github.com/dropofwill/rtasklib) and the `task_time` repo at [dropofwill/task_time](http://github.com/dropofwill/task_time).
 

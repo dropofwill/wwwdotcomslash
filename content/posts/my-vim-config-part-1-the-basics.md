@@ -1,9 +1,9 @@
----
-title: "My Vim Config Part 1: The Basics"
-date: 2014-11-02T03:23:00Z
-tags: Vim, Config
++++
+title = "My Vim Config Part 1: The Basics"
+date = 2014-11-02T03:23:00Z
+tags = ["Vim", "Config"]
 
----
++++
 
 As someone that came to Vim from Sublime Text (through the excellent Vi-ntage mode), one thing that held me back was just how annoying the default Vim settings are. In a way looking back at it that wasn't a bad thing, it let me really craft my own configuration that I'm pretty happy with, but always looking for ways to improve. In order to help someone else a who is headed down that path find a config that works for them a little quicker.
 

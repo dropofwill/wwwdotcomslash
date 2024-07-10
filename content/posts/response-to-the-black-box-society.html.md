@@ -1,10 +1,10 @@
----
-title: Response to Pasquale's The Black Box Society
-date: 2015-11-03T02:15:00Z
-tags: Review, FOSS
-published: false
++++
+title = "Response to Pasquale's The Black Box Society"
+date = 2015-11-03T02:15:00Z
+tags = ["Review", "FOSS"]
+draft = true
 
----
++++
 
 <!--
 As part of your notebook entries, I would like you to write up a short response piece: a couple of pages (say ~700 words for those of you counting) on this topic. As we have seen, the hidden hand of the market largely exists within black box activities at a techno-social level. After reading chapters from Pasquale's recent book, I would like you to reflect on how to recognize and navigate the effect of having your personal data (and, by extension, personal lives) harvested and put to use in a variety of ways.

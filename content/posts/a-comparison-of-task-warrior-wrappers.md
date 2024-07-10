@@ -1,9 +1,9 @@
----
-title: A Comparison of Task Warrior Wrappers
-date: 2015-02-22T20:54:00Z
-tags: LinuxDev, task_time
++++
+title = "A Comparison of Task Warrior Wrappers"
+date = 2015-02-22T20:54:00Z
+tags = ["LinuxDev", "task_time"]
 
----
++++
 
 So as it turns out there were 3 main libraries written to interact with the TaskWarrior database (I think there is also a Perl and maybe a PHP wrapper as well, but I couldn't find them again and let's face it: I'm not interested in using either of those languages anyways).
 

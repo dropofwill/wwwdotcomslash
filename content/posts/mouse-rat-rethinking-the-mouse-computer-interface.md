@@ -1,10 +1,10 @@
----
-title: "Mouse Rat: Rethinking the mouse computer interface"
-date: 2015-03-28T18:36:00Z
-tags: Physical Computing, Wearables, Arduino, Mouse Rat
-summary: "Design exploration for a wearable gesture based mouse glove."
++++
+title = "Mouse Rat: Rethinking the mouse computer interface"
+date = 2015-03-28T18:36:00Z
+tags = ["Physical Computing", "Wearables", "Arduino", "Mouse Rat"]
+summary = "Design exploration for a wearable gesture based mouse glove."
 
----
++++
 
 Design exploration for a wearable gesture based mouse glove.
 

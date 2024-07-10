@@ -1,7 +1,7 @@
 +++
 title = "Taskwarrior timesheet plugin plan"
 date = 2015-02-16T19:36:00Z
-tags = Ruby, LinuxDev
+tags = ["Ruby", "LinuxDev"]
 
 +++
 
@@ -47,11 +47,11 @@ My license of choice is the Creative Commons 0, because I prefer to be as permis
 
 ## Milestones
 
-1. Initial functionality: internals work and public API finalized. Rough due date: March 16th, may shift back if I need to spend more time on implementing functionality in the wrapper.
+1. Initial functionality: internals work and public API finalized. Rough due date = March 16th, may shift back if I need to spend more time on implementing functionality in the wrapper.
 
-2. Reporting and external integration: all the charts and reporting features are working and any integration with external services are finalized. Rough due date: April 27th
+2. Reporting and external integration: all the charts and reporting features are working and any integration with external services are finalized. Rough due date = April 27th
 
-3. Initial Release: full to near full test coverage and packaged and submitted to at a minimum: RubyGems, AUR, and Debian (possibly also RPM as time permits). Rough due date: May 14th
+3. Initial Release: full to near full test coverage and packaged and submitted to at a minimum: RubyGems, AUR, and Debian (possibly also RPM as time permits). Rough due date = May 14th
 
 
 

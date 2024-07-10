@@ -1,9 +1,9 @@
----
-title: "Bugfix: FooTable"
-date: 2014-09-24T05:43:00Z
-tags: FOSS, Bugfix, JavaScript
++++
+title = "Bugfix: FooTable"
+date = 2014-09-24T05:43:00Z
+tags = ["FOSS", "Bugfix", "JavaScript"]
 
----
++++
 
 Everyone in the frontend community likes to hate on tables, it's like Comic Sans in the design community. And this is for mostly good reasons, tables for layouts are pretty much unnecessary in this day in age (unless you're looking to center something vertically, [then *maybe* you can use it in your CSS, not the markup](http://css-tricks.com/centering-in-the-unknown/){:target="_blank"}), but there are still actually legitimate uses of tables. You know like for tabular data.
 
@@ -52,7 +52,7 @@ At first this may seem like a terrible mistake, now perfectly good programs will
 function someScope() {
   // This will be strict as well
 }
------
++++--
 // Not strict
 function someScope() {
   "use strict";

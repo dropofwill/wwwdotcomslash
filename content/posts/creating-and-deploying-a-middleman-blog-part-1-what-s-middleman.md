@@ -1,9 +1,9 @@
----
-title: "Creating and Deploying a Middleman Blog, Part 1: What's Middleman?"
-date: 2014-09-14T22:07:00Z
-tags: Ruby, Middleman, Blog
++++
+title = "Creating and Deploying a Middleman Blog, Part 1: What's Middleman?"
+date = 2014-09-14T22:07:00Z
+tags = ["Ruby", "Middleman", "Blog"]
 
----
++++
 
 This is the first in what will probably be a three part series on creating and deploying a [Middleman](https://github.com/middleman/middleman){:target="_blank"} site, specifically a blog deployed to a [Heroku](https://devcenter.heroku.com/start){:target="_blank"} instance.
 

@@ -1,9 +1,9 @@
----
-title: "A Scanner Orderly: The smart coaster"
-date: 2015-05-20T02:04:00Z
-tags: Physical Computing, Business and Legal, Arduino
++++
+title = "A Scanner Orderly: The smart coaster"
+date = 2015-05-20T02:04:00Z
+tags = ["Physical Computing", "Business and Legal", "Arduino"]
 
----
++++
 
 What if you could order drink with your coaster? This blog post explains how we made one using an Arduino and Node.js.
 

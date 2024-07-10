@@ -1,9 +1,9 @@
----
-title: "Creating and Deploying a Middleman Blog, Part 2: Blogging with Middleman"
-date: 2014-09-22T02:06:00Z
-tags: Ruby, Middleman, Blog
++++
+title = "Creating and Deploying a Middleman Blog, Part 2: Blogging with Middleman"
+date = 2014-09-22T02:06:00Z
+tags = ["Ruby", "Middleman", "Blog"]
 
----
++++
 
 [Last time](/2014/09/14/creating-and-deploying-a-middleman-blog-part-1-what-s-middleman/) I talked about static site generators in general (why you would use them) and a little bit about Middleman specifically (why you would use it in particular). Today I am going to talk about Middleman's blogging capabilities.
 
@@ -42,12 +42,12 @@ In Middleman blog articles are generally written in whatever flavor of Markdown 
 Frontmatter is YAML or JSON that you can include at the top of your markdown pages (or any page) to set local variables to access with your templates and layouts. A common use of this is to set the title of a page or in a blog context set tags and date information. For instance, on this blog I use YAML and the Frontmatter for this post looks as folows:
 
 ~~~
----
-title: "Creating and Deploying a Middleman Blog, Part 2: Blogging with Middleman"
-date: 2014-09-22 02:06 UTC
-tags: Ruby, Middleman, Blog
++++
+title = "Creating and Deploying a Middleman Blog, Part 2: Blogging with Middleman"
+date = 2014-09-22 02:06 UTC
+tags = Ruby, Middleman, Blog
 summary: "Last time I talked about static site generators in general (why you would use them) and a little bit about Middleman specifically (why you would use it in particular). Today I am going to talk about Middleman's blogging capabilities."
----
++++
 ~~~
 
 Now you might be thinking cool, but that looks like a bit of a pain to have to type out, esp. the date. How do you remember to format that? The answer is I don't, instead I use a middleman scaffolding feature to give me the barebones of an article to start with:

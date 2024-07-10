@@ -1,7 +1,7 @@
 +++
-title = Word Sense Disambiguation with Python
+title = "Word Sense Disambiguation with Python"
 date = 2014-10-13T01:48:00Z
-tags = NLP, Python, Semantics
+tags = ["NLP", "Python", "Semantics"]
 
 +++
 

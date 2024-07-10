@@ -1,9 +1,9 @@
----
-title: "task_time and rtasklib updates March 8th"
-date: 2015-03-09T01:10:00Z
-tags: LinuxDev, Ruby, task_time, rtasklib
++++
+title = "task_time and rtasklib updates March 8th"
+date = 2015-03-09T01:10:00Z
+tags = ["LinuxDev", "Ruby", "task_time", "rtasklib"]
 
----
++++
 
 Last week I talked about how all existing `TaskWarrior` wrappers were not going to satisfy the requirements for `task_time`, so I decided to roll my own Ruby wrapper `rtasklib` and started working on the JSON to domain object marshalling and vice versa. I realized that I was reinventing the wheel a bit with the domain objects and to some extent with the data type coercions (though obviously some custom coercions will be necessary).
 

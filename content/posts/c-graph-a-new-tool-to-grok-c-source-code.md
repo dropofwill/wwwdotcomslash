@@ -1,9 +1,9 @@
----
-title: "C-Graph: A new tool to grok C-source code"
-date: 2014-12-15T01:43:00Z
-tags: C, JavaScript, Data Viz
++++
+title = "C-Graph: A new tool to grok C-source code"
+date = 2014-12-15T01:43:00Z
+tags = ["C", "JavaScript", "Data Viz"]
 
----
++++
 
 A joint post by [Brendan Whitfield](http://brendan-w.com/) & Will Paul
 

@@ -1,9 +1,9 @@
----
-title: Setting up a nice UNIX Ruby dev env
-date: 2014-12-10T06:05:00Z
-tags: Ruby, Config
++++
+title = "Setting up a nice UNIX Ruby dev env"
+date = 2014-12-10T06:05:00Z
+tags = ["Ruby", "Config"]
 
----
++++
 
 Setting up a Ruby environment is deceptively simple. Easy to do, hard to maintain. The two major players, RVM and rbenv, offer more than the typical user needs or can possibly understand. Here I walk you through my setup using tools that do one thing and do it well. Coincidently all these tools that I use were written by the same guy/girl who goes by the handle Postmodern.
 
