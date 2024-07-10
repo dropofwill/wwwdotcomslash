@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h5>Software engineer working on distributed systems at <a href="http://about.constantcontact.com/company">Constant Contact.</a> Interested in functional programming, computational linguistics, and data visualization.</h5>
+
+<ul class='project-nav'>
+  <li>
+    <a href="{{ get_url(path="@/projects/cgraph.md") }}" class='project-link'>
+      C-Graph <span>interactive data-viz</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="{{ get_url(path="@/projects/bloxeo.md") }}" class='project-link'>
+      Bloxeo <span>real-time server</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="{{ get_url(path="@/projects/stressed-out.md") }}" class='project-link'>
+      Stressed out <span>computational linguistics research</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="{{ get_url(path="@/projects/rtasklib.md") }}" class='project-link'>
+      Rtasklib <span>task data library</span>
+    </a>
+  </li>
+</ul>
+{% endblock content %}
