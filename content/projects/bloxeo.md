@@ -1,8 +1,18 @@
 +++
-# layout: project
-# project:
-#   title: Bloxeo
-#   sub: real-time server
+title = "Bloxeo"
+template = "project.html"
+
+[extra]
+subtitle = "real-time collaboration"
+hero_img = 'bloxeo/bloxeo-landing-page.png'
+
+description = "A platform for brainstorming, organizing, and refining ideas in a distributed manner."
+summary = "Bloxeo is a web-based collaborative brainstorming application that creates an experience making your creative process not only easier and more fun, but more productive.  Assemble a team and work off of each other’s ideas. Generate ideas into a growing bank of idea blocks. Build on the best ideas to reach that eureka moment."
+
++++
+
+Bloxeo is a web-based collaborative brainstorming application that creates an experience making your creative process not only easier and more fun, but more productive.  Assemble a team and work off of each other’s ideas. Generate ideas into a growing bank of idea blocks. Build on the best ideas to reach that eureka moment.
+
 # 
 # role: Lead Backend Developer
 # tags: Backend, Realtime
@@ -31,13 +41,4 @@
 #     link: 'https://github.com/jordankid93/'
 #   - name: 'Peter Gyory'
 #     link: 'https://github.com/petroochio/'
-
-hero_img = 'bloxeo/bloxeo-landing-page.png'
-
-description = 'A platform for brainstorming, organizing, and refining ideas in a distributed manner.'
-summary = 'Bloxeo is a web-based collaborative brainstorming application that creates an experience making your creative process not only easier and more fun, but more productive.  Assemble a team and work off of each other’s ideas. Generate ideas into a growing bank of idea blocks. Build on the best ideas to reach that eureka moment.'
-
-+++
-
-Bloxeo is a web-based collaborative brainstorming application that creates an experience making your creative process not only easier and more fun, but more productive.  Assemble a team and work off of each other’s ideas. Generate ideas into a growing bank of idea blocks. Build on the best ideas to reach that eureka moment.
 
