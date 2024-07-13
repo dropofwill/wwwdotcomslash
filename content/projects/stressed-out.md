@@ -1,8 +1,10 @@
 +++
 title = "Stressed out"
+template = "project.html"
 
 [extra]
 subtitle = "computational linguistics research"
+role = "Primary author/researcher"
 +++
 
 Stress can have a negative and costly impact on people’s lives. Mitigating stress before it becomes a problem requires early, noninvasive identification and a deeper understanding of the signals of stress. To test automatic stress detection we created a new dataset with subjects completing the Stroop task under unstressed and stressed conditions. We then used supervised classification algorithms to try to discriminate between the stressed and unstressed condition.

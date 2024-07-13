@@ -1,11 +1,79 @@
 {% extends "base.html" %}
 
 {% block content %}
+  <div class="article">
+    <h1 class="project-title">
+      {{ page.title }} <span>{{ page.extra.subtitle }}</span>
+    </h1>
 
- <div class="article">
-  <h1 class="project-title">{{ page.title }} <span>{{ page.extra.subtitle }}</span></h1>
+    {% if page.extra.description %}
+      <h5>{{ page.extra.description }}</h5>
+    {% endif %}
 
-  <h5>{{ page.extra.description }}</h5>
-</div>
+    <% if !current_page.data.hero_img.nil? %>
+    <%= image_tag current_page.data.hero_img, class: 'project-hero-img' %>
+    <% end %>
 
+    <section class="clearfix">
+      {% if page.extra.role %}
+        <section class="meta-data">
+          <h5>Role</h5>
+          <p>{{ page.extra.role }}</p>
+        </section>
+      {% endif %}
+
+      {% if page.extra.team %}
+        <section class="meta-data">
+          {% if page.extra.team_name %}
+            <h5>Team</h5>
+          {% else %}
+            <h5><%= current_page.data.team_name %></h5>
+          {% endif %}
+
+          <ul>
+            {% for teammate in page.extra.team %}
+              {% if teammate.link %}
+                <li><a href="{{ teammate.link }}">{{ teammate.name }}</a></li>
+              {% else %}
+                <li>{{ teammate.name }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </section>
+      {% endif %}
+
+      {% if page.extra.tech %}
+        <section class="meta-data">
+          <h5>Tech</h5>
+          <ul>
+            {% for technology in page.extra.tech %}
+              <li>{{ technology }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endif %}
+
+      {% if page.extra.links %}
+        <section class="meta-data">
+          <h5>Links</h5>
+          {% for link in page.extra.links %}
+            <a href="{{ link.href }}">{{ link.title }}</a><br />
+          {% endfor %}
+        </section>
+      {% endif %}
+
+    </section>
+
+
+    <% if !current_page.data.images.nil? %>
+    <% current_page.data.each do |image| %>
+    <%= image_tag image, class: 'project-hero-img' %>
+    <% end %>
+    <% end %>
+
+    <article class="clearfix">
+      {{page.content | safe}}
+    </article>
+  </div>
 {% endblock content %}
+

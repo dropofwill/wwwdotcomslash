@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="large-10 large-offset-1 columns typeset">
+    {% for page in paginator.pages %}
+        {{page.title}}
+    {% endfor %}
+    Num pagers: {{ paginator.number_pagers }}
+    Page size: {{ paginator.paginate_by }}
+    Current index: {{ paginator.current_index }}
+    First: {{ paginator.first | safe }}
+    Last: {{ paginator.last | safe }}
+    {% if paginator.previous %}has_prev{% endif%}
+    {% if paginator.next %}has_next{% endif%}
+  </div>
+</div>
+
+<aside>
+  <h2>Recent Articles</h2>
+  <ol>
+    <% blog.articles[0...10].each do |article| %>
+      <li>
+        <%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span>
+      </li>
+    <% end %>
+  </ol>
+
+  <h2>Tags</h2>
+  <ol class="columnize">
+    <% blog.tags.sort_by{ |t| t[1].count }.reverse.each do |tag, articles| %>
+      <li><%= link_to "#{tag} (#{articles.size})", "#{site_url}#{tag_path(tag)}" %></li>
+    <% end %>
+  </ol>
+
+  <h2>By Year</h2>
+  <ol>
+    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+      <li><%= link_to "#{year} (#{articles.size})", "#{site_url}#{blog_year_path(year)}" %></li>
+    <% end %>
+  </ol>
+</aside>
+{% endblock content %}

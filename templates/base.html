@@ -7,7 +7,7 @@
 
     <!-- <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %> -->
 
-    <!-- <%= stylesheet_link_tag 'main' %> -->
+    <link rel="stylesheet" href="{{ get_url(path="main.css") }}" />
 
     <!-- Viewport declarations -->
     <meta name="viewport" content="width=533">
@@ -15,38 +15,28 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="hero">
+        <a href="/">
+          <h1 class='logo'>
+            &lambda;will.paul
+          </h1>
+        </a>
 
-    <header class="hero">
-      <% link_to "/" do %>
-        <%# <%= image_tag 'logo.svg', class: 'logo', alt: 'Will Paul' %>
-        <h1 class='logo'>
-          &lambda;will.paul
-        </h1>
-      <% end %>
-      <nav>
-        <ul>
-          <li class="<%= current_page?('/', 'projects') %>"><%= link_to 'projects', '/' %></li>
-          <li class="<%= current_page?('/posts/', 'posts') %>"><%= link_to 'posts', '/posts' %></li>
-          <li><%= link_to 'github', 'http://github.com/dropofwill' %></li>
-          <li><%= link_to 'resume', 'http://will-paul.com/resume' %></li>
-        </ul>
-      </nav>
-    </header>
+        <nav>
+          <ul>
+            <li class="current-page-link"><a href="/projects">projects</a></li>
+            <li ><a href="/posts">posts</a></li>
+            <li><a href="http://github.com/dropofwill">github</a></li>
+            <li><a href="http://will-paul.com/resume">resume</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <div class="typeset" role="main">
-      {% block content %} {% endblock %}
+      <div class="typeset" role="main">
+        {% block content %}
+
+        {% endblock %}
+      </div>
     </div>
-  </div>
-
-  <!-- <script> -->
-  <!--   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ -->
-  <!--   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), -->
-  <!--   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) -->
-  <!--   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); -->
-
-  <!--   ga('create', 'UA-55319602-3', 'auto'); -->
-  <!--   ga('send', 'pageview'); -->
-
-  <!-- </script> -->
   </body>
 </html>
