@@ -7,7 +7,7 @@ tags = ["Physical Computing", "Arduino"]
 
 Play power chords with an Arduino, capacitive touch pads, and a couple of speakers.
 
-READMORE
+<!-- more -->
 
 Source code available on [Github](https://github.com/dropofwill/multi_tone_arduino). It includes the necessary libraries to make it run: the Adafruit MPR121 breakout board code and the external Tone library hosted on Google Code (which has reached end of service).
 

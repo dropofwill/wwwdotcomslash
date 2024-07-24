@@ -7,6 +7,8 @@ tags = ["NLP", "Semantics", "Data Viz"]
 
 Crazy long title, I know, but it's not as complicated as it sounds. For my Natural Language Processing class we recently approached the problem of Word Sense Disambiguation from a Machine Learning perspective (we also looked at others, including lookup approaches like Lesk), using the simple, but effective, decision list algorithm. This is my attempt at visualizing the results.
 
+<!-- more -->
+
 The WSD task is determining which ambiguous meaning of a word is intended, usually based on the context, e.g. <em>play </em>bass<em> guitar</em> versus <em>caught a largemouth </em>bass.
 
 In order to accomplish this we look at the words surrounding the text looking for hints like part of speech (which can be derived from a pre-trained tagger) and words, so for example a rule could be <em>+1 word is guitar</em> or <em>-2 word is a common noun (NN)</em>, where +/- k is relative to the ambiguous word in question.

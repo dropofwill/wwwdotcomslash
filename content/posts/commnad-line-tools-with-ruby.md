@@ -7,6 +7,8 @@ tags = ["LinuxDev", "Business and Legal", "Ruby"]
 
 I've written a lot of Ruby code over the years from web applications, to rack frameworks, to rake tasks, even packaged a few up as gems, but one thing I've never done is write a command line tool directly in ruby. This post just sums up my initial foray into making Ruby cli tools, as usual with Ruby it's not nearly as hard as it sounds.
 
+<!-- more -->
+
 ## The Basics
 
 Typically when you write a ruby script you execute it with the Ruby command followed by a file path, like so:

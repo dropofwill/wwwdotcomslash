@@ -7,7 +7,7 @@ tags = ["Physical Computing", "Business and Legal", "Arduino"]
 
 What if you could order drink with your coaster? This blog post explains how we made one using an Arduino and Node.js.
 
-READMORE
+<!-- more -->
 
 [Arduino Source Code](https://github.com/dropofwill/a-scanner-orderly-embed) (BSD 3, with GPL libraries)
 

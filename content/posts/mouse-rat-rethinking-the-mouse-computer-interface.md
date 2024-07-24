@@ -8,7 +8,7 @@ summary = "Design exploration for a wearable gesture based mouse glove."
 
 Design exploration for a wearable gesture based mouse glove.
 
-READMORE
+<!-- more -->
 
 > **Team**
 >

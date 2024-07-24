@@ -7,6 +7,8 @@ tags = ["Vim", "Config"]
 
 This is a continuation of my short series ([part 1](/2014/11/02/my-vim-config-part-1-the-basics/)) on how I setup Vim to be a little more fully featured looking at the custom shortcuts. By no means is my setup the best, but there are a few neat things I've stumbled upon and my thought is that by aggregating them here someone else might find something new to add. Or maybe someone knows a better way to do something and lets me know. So let's get started!
 
+<!-- more -->
+
 First you'll want to start by remapping the leader key to something you're comfortable with. In case you are not familiar, the leader key is the key that you press and release before ('leads') you send a custom key command to Vim. Personally I don't have any custom commands that make sense in insert mode, so I remap it to space. By default it is /, pick your poison and let's get started.
 
 ~~~

@@ -7,6 +7,8 @@ tags = ["Vim", "Config"]
 
 As someone that came to Vim from Sublime Text (through the excellent Vi-ntage mode), one thing that held me back was just how annoying the default Vim settings are. In a way looking back at it that wasn't a bad thing, it let me really craft my own configuration that I'm pretty happy with, but always looking for ways to improve. In order to help someone else a who is headed down that path find a config that works for them a little quicker.
 
+<!-- more -->
+
 To start off I just want to look at the basic stuff, how do we get rid of all that annoying old Vi stuff and get some useful defaults?
 
 First, the most important thing to do is turn off Vi-compatibility, unless you plan on using this config on really old computers you shouldn't have any need for this compatibility.

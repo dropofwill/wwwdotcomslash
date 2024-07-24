@@ -9,6 +9,8 @@ A joint post by [Brendan Whitfield](http://brendan-w.com/) & Will Paul
 
 Source code is often the most up to date documentation available, but while code is written in a linear fashion, the execution is a network of calls that often jump across files. Known as a function call graph, this data can help programmers quickly grasp the structure of a program. How can  we use visualization to make the process of grokking source code easier?
 
+<!-- more -->
+
 > Source Code: [https://github.com/brendanwhitfield/cgraph](https://github.com/brendanwhitfield/cgraph)
 > 
 > Live Example: [http://cgraph.herokuapp.com/](http://cgraph.herokuapp.com/)

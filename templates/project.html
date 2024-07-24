@@ -10,9 +10,9 @@
       <h5>{{ page.extra.description }}</h5>
     {% endif %}
 
-    <% if !current_page.data.hero_img.nil? %>
-    <%= image_tag current_page.data.hero_img, class: 'project-hero-img' %>
-    <% end %>
+    {% if page.extra.hero_img %}
+      <img src="{{page.extra.hero_img}}" class="project-hero-img" />
+    {% endif %}
 
     <section class="clearfix">
       {% if page.extra.role %}
@@ -25,9 +25,9 @@
       {% if page.extra.team %}
         <section class="meta-data">
           {% if page.extra.team_name %}
-            <h5>Team</h5>
+            <h5>{{ page.extra.team_name }}</h5>
           {% else %}
-            <h5><%= current_page.data.team_name %></h5>
+            <h5>Team</h5>
           {% endif %}
 
           <ul>
@@ -61,15 +61,13 @@
           {% endfor %}
         </section>
       {% endif %}
-
     </section>
 
-
-    <% if !current_page.data.images.nil? %>
-    <% current_page.data.each do |image| %>
-    <%= image_tag image, class: 'project-hero-img' %>
-    <% end %>
-    <% end %>
+    {% if page.extra.images %}
+      {% for image in page.extra.images %}
+        <img src="{{image}}" class="project-hero-img" />
+      {% endfor %}
+    {% endif %}
 
     <article class="clearfix">
       {{page.content | safe}}

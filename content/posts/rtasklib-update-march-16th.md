@@ -7,6 +7,8 @@ tags = ["LinuxDev", "Ruby", "rtasklib"]
 
 Over the last couple of weeks the overall architecture has been in a state of flux as I have been swapping pieces in out to see what will work best. Now as I approach my original milestone for having this in a working condition things are starting to fall into place. Models for tasks and configuration are pretty much stable, initialization of the configuration is done, and validation and serialization of tasks are coming along. The main bit of work left to do is writing the controllers to hook all of the components together and will effectively make up the public interface for the library.
 
+<!-- more -->
+
 ## A little implementation detail
 
 For the configuration file I decided to effectively store it as a shallow hash structure before converting it to a Virtus domain object. The config will be immutable because there should not be a need to both permanently and dynamically change the users configurations, the latter alone can be configured on a per call basis with the `rc:` flag. Because of this we only have to go in one direction, which makes the serialization layer less restrictive. As I mentioned last week `taskw` implemented a deep nested hash like this:

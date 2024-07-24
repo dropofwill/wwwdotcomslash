@@ -8,6 +8,8 @@ summary = "The beautiful thing about static site generators is the portability, 
 
 [Two posts ago](/2014/09/14/creating-and-deploying-a-middleman-blog-part-1-what-s-middleman/) I talked about static site generators in general and Middleman specifically. [After that](/2014/09/22/creating-and-deploying-a-middleman-blog-part-2-blogging-with-middleman/) I talked about how to use Middleman for blogging and again talked about different use cases. Today I am going to talk about deployment options and how you can get your site onto the web.
 
+<!-- more -->
+
 ### The Options
 The beautiful thing about static site generators is the portability, you can just throw it on any server that's public facing and can serve files and it just works. That said there are certain practices that can make your life easier, and deploy your sites safely with versioning and without ever having to touch an FTP client. I'm going to talk about one of many of these possible configurations, [Heroku](http://heroku.com/){:target="_blank"} with [Puma](http://puma.io/){:target="_blank"}.
 

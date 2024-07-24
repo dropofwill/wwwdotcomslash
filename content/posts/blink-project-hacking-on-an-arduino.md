@@ -7,6 +7,8 @@ tags = ["Physical Computing", "Arduino"]
 
 For my Physical Computing &amp; Alt Interfaces class we had to use an Arduino (I have the latest Uno) to control LED(s) in a non-trivial way. I knew I wanted to make some kind of LED matrix, but didn't know how big of one I could make on my half sized breadboard and limited number of pins. What I ended up with was a 16 LED (4x4) matrix controlled by just 8 pins, each of which can be individually controlled.
 
+<!-- more -->
+
 <%= image_tag image_path("matrix_scheme.png"), alt: "rough schematic of the led matrix setup", style: "width: 30%; float: right" %>
 
 So how does that work? Basically you wire it up so each row and column are interconnected and each has it's own, you can get a rough idea how it works in my simplified schematic to the right. To light up an LED all you need to do is set the row or column that its anode is connected to HIGH to give it current and then set the row or column that its cathode is connected to LOW grounding the circuit. This way even though 4 LED's are getting current and 4 LED's are grounded, only 1 is completing the circuit and lighting up. The code would look something like this:

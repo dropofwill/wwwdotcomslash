@@ -7,6 +7,8 @@ tags = ["D3", "JavaScript", "Data Viz"]
 
 One question that often comes to my mind is how does geographical location (and the culture that comes with it) influence the band’s music and therefore my taste as well. So that’s why I decided to use this data to create a cartogram of my listening data.
 
+<!-- more -->
+
 [If you don't want to read this run down check the code out here on Github.](https://github.com/dropofwill/d3-lastfm-geo-viz)
 
 [Last.fm](http://www.last.fm) is a social music service that as one of it’s branches tracks user’s listening history and makes it publicly available through an API. I personally have had Last.fm setup on my Spotify account since March 17th, 2012 with other devices added at different points between now and then (so this is actually a small subset of my total listening history). This results in a dataset of 1,017 artists and 22,285 songs played.

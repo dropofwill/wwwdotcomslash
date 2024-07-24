@@ -7,6 +7,8 @@ tags = ["NLP", "Python", "Semantics"]
 
 One of the first things you realize when working with any sort of linguistic data is just how ambiguous just about anything we say or write really is. From the smallest units of sound (what was that garbled bit of sound?) to the document unit of meaning (what was that article about?), there aren't many parts of language that we can be 100% sure of even as native speakers, much less as an outside observer, like our programs.
 
+<!-- more -->
+
 Nevertheless, we have solved a number of very difficult problems to a reasonable degree of accuracy with computational approaches. Today I'm going to talk about one of the more naive approaches to word sense disambiguation, which actually does fairly well when given a reasonably large input.
 
 But first, what's this Word Sense Disambiguation all about. Well, a words sense can is a way of identifying how we use a given word by associating it with a *gloss*, which you can think of as it's definition. For example the sense in which I'm using the word sense according to WordNet (a corpus that keeps track of all this) is **sense.n.02**. That means the root word is sense, it's being used as a noun, and it is the second most common usage of the word. The gloss associated with this sense is:

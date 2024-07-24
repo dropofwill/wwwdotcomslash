@@ -7,6 +7,8 @@ tags = ["Ruby", "Config"]
 
 Setting up a Ruby environment is deceptively simple. Easy to do, hard to maintain. The two major players, RVM and rbenv, offer more than the typical user needs or can possibly understand. Here I walk you through my setup using tools that do one thing and do it well. Coincidently all these tools that I use were written by the same guy/girl who goes by the handle Postmodern.
 
+<!-- more -->
+
 So what are our goals coming out of this setup?
 
 1. A way to easily install new versions of Ruby without conflicting with and system versions or each other.

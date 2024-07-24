@@ -7,6 +7,8 @@ tags = ["LinuxDev", "Business and Legal", "Ruby"]
 
 For my Software Development in Linux class we are making one large project over the course of the class and then packaging it up for distribution at the end (probably Debian, RPM, and AUR).  This is a little bit of a paradigm shift for me personally, as for most of my projects distribution means pushing to a Heroku instance, so I've had to brain storm some new non-web-based projects. I've come up with two basic trains of thought either a better time-tracking/Freshbooks integration for taskwarrior (the current ones are all bare-bones) or any number of music/analytics ideas for the music players, specifically MPD.
 
+<!-- more -->
+
 For now I've decided to just review MPD, its current state, and what options are available to me in terms of wrappers (preferably Ruby wrappers, my scripting language of choice). The goal here is to just establish what the MPD landscape looks like so that I can effectively scope an 11-12 week project.
 
 ## The Music Player Daemon

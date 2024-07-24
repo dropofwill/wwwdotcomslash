@@ -7,6 +7,8 @@ tags = ["LinuxDev", "Business and Legal", "Ruby", "rtasklib"]
 
 It turns out that one of the reasons Ruby was popular before the advent of Rails was because it was so easy to integrate with 3rd party tools through subprocesses. In fact Ruby has at least 7 ways of executing processes either in the core or the standard libraries and many more user implemented varieties. Since `rtasklib` is at its core concerned with interacting with a subprocess having a solid understanding of the available options is important. Below I summarize the results of my research for several of Ruby's subprocess methods.
 
+<!-- more -->
+
 ## Kernel#exec, `exec('echo exec')`
 
 Exec works by actually changing the current process into whatever its parameter is. So anything that comes after an `exec` call in a Ruby program will never execute. This is useful for tasks where that call is the last action the program takes as well as acting as the basic building block off of which all the other commands are implemented.

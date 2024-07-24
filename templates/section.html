@@ -4,6 +4,20 @@
 <div class="row">
   <div class="large-10 large-offset-1 columns typeset">
     {% for page in paginator.pages %}
+      <article class="summary">
+          <h3 class="summary-title">
+            {{ page.title }}
+          </h3>
+          <div class="summary-body emphasis">
+            <p>{{ page.summary | safe }}</p>
+          </div>
+          <div class="read-more">
+            <a href="{{ page.permalink }}">Read more...</a>
+          </div>
+      </article>
+    {% endfor %}
+
+    {% for page in paginator.pages %}
         {{page.title}}
     {% endfor %}
     Num pagers: {{ paginator.number_pagers }}

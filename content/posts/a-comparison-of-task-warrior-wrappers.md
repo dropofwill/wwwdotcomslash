@@ -7,6 +7,8 @@ tags = ["LinuxDev", "task_time"]
 
 So as it turns out there were 3 main libraries written to interact with the TaskWarrior database (I think there is also a Perl and maybe a PHP wrapper as well, but I couldn't find them again and let's face it: I'm not interested in using either of those languages anyways).
 
+<!-- more -->
+
 ## Python: [taskw](https://github.com/ralphbean/taskw), GPL v3
 
 A project developed by Rochester's own Ralph Bean with help from 12 other devs, it is by far the most actively developed wrapper available and had a new commit just 3 days ago. It is developed by a dev who talks at rocpy every month and is the #rit-foss channel all the time, so that's a big plus. The current build status has an error, but it looks like maybe some sort of [network connection problem?](https://travis-ci.org/ralphbean/taskw) Will have to look into that further.

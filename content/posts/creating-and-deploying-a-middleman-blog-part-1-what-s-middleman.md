@@ -7,7 +7,7 @@ tags = ["Ruby", "Middleman", "Blog"]
 
 This is the first in what will probably be a three part series on creating and deploying a [Middleman](https://github.com/middleman/middleman){:target="_blank"} site, specifically a blog deployed to a [Heroku](https://devcenter.heroku.com/start){:target="_blank"} instance.
 
-READMORE
+<!-- more -->
 
 ### Where we're going in the next couple of posts:
 

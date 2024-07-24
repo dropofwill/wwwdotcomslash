@@ -7,6 +7,8 @@ tags = ["FOSS", "Bugfix", "JavaScript"]
 
 Everyone in the frontend community likes to hate on tables, it's like Comic Sans in the design community. And this is for mostly good reasons, tables for layouts are pretty much unnecessary in this day in age (unless you're looking to center something vertically, [then *maybe* you can use it in your CSS, not the markup](http://css-tricks.com/centering-in-the-unknown/){:target="_blank"}), but there are still actually legitimate uses of tables. You know like for tabular data.
 
+<!-- more -->
+
 Unfortunately the default HTML tables aren't really that great from a UX perspective. From a functional standpoint there's no way to sort or filter data and from a design perspective it definitely still looks like something from the 90s. Now try loading that 90s era table of data with more than four columns of data on your phone, things start to get bad fast.
 
 That's where [FooTables](https://github.com/bradvin/FooTable){:target="_blank"} comes in. It's a [JQuery](https://github.com/jquery/jquery){:target="_blank"} plugin that makes your data tables responsive with custom breakpoints, gives you some default styles that don't suck if you want them, and offers tons of new functionality, like filtering, sorting, pagination, and more. I've used on numerous occasions with great success, so when I got a job that needed to display a lot of tabular data to users (a lot of which who were mobile users), I decided to use FooTables.
