@@ -1,6 +1,9 @@
 +++
 title = "Taskwarrior timesheet plugin plan"
 date = 2015-02-16T19:36:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Ruby", "LinuxDev"]
 
 +++

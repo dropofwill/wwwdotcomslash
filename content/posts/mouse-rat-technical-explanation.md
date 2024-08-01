@@ -1,6 +1,9 @@
 +++
 title = "Mouse Rat: Technical explanation"
 date = 2015-03-28T18:37:00Z
+weight = 6
+
+[taxonomies]
 tags = ["Physical Computing", "Wearables", "Arduino", "Mouse Rat"]
 
 +++

@@ -1,6 +1,9 @@
 +++
 title = "Setting up a nice UNIX Ruby dev env"
 date = 2014-12-10T06:05:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Ruby", "Config"]
 
 +++

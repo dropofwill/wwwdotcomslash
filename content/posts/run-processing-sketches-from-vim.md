@@ -1,6 +1,9 @@
 +++
 title = "Run Processing Sketches from Vim"
 date = 2014-09-08T03:09:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Vim", "Processing"]
 
 +++

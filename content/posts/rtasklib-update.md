@@ -1,6 +1,9 @@
 +++
 title = "rtasklib update"
 date = 2015-04-20T14:36:00Z
+weight = 100
+
+[taxonomies]
 tags = ["LinuxDev", "Business and Legal", "Ruby", "rtasklib"]
 
 +++

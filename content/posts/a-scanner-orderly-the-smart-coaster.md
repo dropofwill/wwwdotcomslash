@@ -1,6 +1,9 @@
 +++
 title = "A Scanner Orderly: The smart coaster"
 date = 2015-05-20T02:04:00Z
+weight = 5
+
+[taxonomies]
 tags = ["Physical Computing", "Business and Legal", "Arduino"]
 
 +++

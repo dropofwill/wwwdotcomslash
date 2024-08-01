@@ -1,6 +1,9 @@
 +++
 title = "Bugfix: FooTable"
 date = 2014-09-24T05:43:00Z
+weight = 100
+
+[taxonomies]
 tags = ["FOSS", "Bugfix", "JavaScript"]
 
 +++

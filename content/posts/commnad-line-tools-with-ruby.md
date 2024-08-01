@@ -1,6 +1,9 @@
 +++
 title = "Writing Command Line Tools with Ruby"
 date = 2015-02-13T17:16:00Z
+weight = 100
+
+[taxonomies]
 tags = ["LinuxDev", "Business and Legal", "Ruby"]
 
 +++

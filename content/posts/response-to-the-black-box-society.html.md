@@ -1,8 +1,11 @@
 +++
 title = "Response to Pasquale's The Black Box Society"
 date = 2015-11-03T02:15:00Z
-tags = ["Review", "FOSS"]
+weight = 100
 draft = true
+
+[taxonomies]
+tags = ["Review", "FOSS"]
 
 +++
 

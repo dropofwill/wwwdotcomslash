@@ -5,10 +5,23 @@
   <div class="large-10 large-offset-1 columns typeset">
     {% for page in paginator.pages %}
       <article class="summary">
-          <h3 class="summary-title">
-            {{ page.title }}
-          </h3>
+          <a href="{{ page.permalink }}">
+            <h3 class="summary-title">{{ page.title }}</h3>
+          </a>
           <div class="summary-body emphasis">
+            <p>
+              <time>{{ page.date | date(format="%b %e, %Y") }}</time>
+              <!-- unsure why i can't access tags from map directly -->
+              {% for x, y in page.taxonomies %}
+                {% if x == "tags" %}
+                  &#8739;
+                  {% for t in y %}
+                    {% set tag = get_taxonomy_term(kind="tags", term=t) %}
+                    <a href="{{ tag.permalink }}">{{ tag.name }}</a>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            </p>
             <p>{{ page.summary | safe }}</p>
           </div>
           <div class="read-more">
@@ -17,41 +30,18 @@
       </article>
     {% endfor %}
 
-    {% for page in paginator.pages %}
-        {{page.title}}
-    {% endfor %}
-    Num pagers: {{ paginator.number_pagers }}
-    Page size: {{ paginator.paginate_by }}
-    Current index: {{ paginator.current_index }}
-    First: {{ paginator.first | safe }}
-    Last: {{ paginator.last | safe }}
-    {% if paginator.previous %}has_prev{% endif%}
-    {% if paginator.next %}has_next{% endif%}
+    <h5>More posts</h5>
+    {% if paginator.previous %}
+      <a href="{{paginator.previous}}" title="previous">&#8592; Previous page</a>
+    {% endif%}
+
+    {% if paginator.previous and paginator.next %}
+    &#8739;
+    {% endif%}
+
+    {% if paginator.next %}
+      <a href="{{paginator.next}}" title="next">Next page &#8594;</a>
+    {% endif%}
   </div>
 </div>
-
-<aside>
-  <h2>Recent Articles</h2>
-  <ol>
-    <% blog.articles[0...10].each do |article| %>
-      <li>
-        <%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span>
-      </li>
-    <% end %>
-  </ol>
-
-  <h2>Tags</h2>
-  <ol class="columnize">
-    <% blog.tags.sort_by{ |t| t[1].count }.reverse.each do |tag, articles| %>
-      <li><%= link_to "#{tag} (#{articles.size})", "#{site_url}#{tag_path(tag)}" %></li>
-    <% end %>
-  </ol>
-
-  <h2>By Year</h2>
-  <ol>
-    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-      <li><%= link_to "#{year} (#{articles.size})", "#{site_url}#{blog_year_path(year)}" %></li>
-    <% end %>
-  </ol>
-</aside>
 {% endblock content %}

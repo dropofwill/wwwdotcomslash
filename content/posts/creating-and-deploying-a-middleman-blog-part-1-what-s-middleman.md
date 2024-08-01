@@ -1,6 +1,9 @@
 +++
 title = "Creating and Deploying a Middleman Blog, Part 1: What's Middleman?"
 date = 2014-09-14T22:07:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Ruby", "Middleman", "Blog"]
 
 +++

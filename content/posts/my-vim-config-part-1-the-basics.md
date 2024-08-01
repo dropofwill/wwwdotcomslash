@@ -1,6 +1,9 @@
 +++
 title = "My Vim Config Part 1: The Basics"
 date = 2014-11-02T03:23:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Vim", "Config"]
 
 +++

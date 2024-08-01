@@ -1,6 +1,9 @@
 +++
 title = "Packaging Ruby gems"
 date = 2015-05-10T15:46:00Z
+weight = 100
+
+[taxonomies]
 tags = ["LinuxDev", "Ruby", "task_time", "rtasklib"]
 
 +++

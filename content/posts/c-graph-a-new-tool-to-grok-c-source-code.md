@@ -1,6 +1,9 @@
 +++
 title = "C-Graph: A new tool to grok C-source code"
 date = 2014-12-15T01:43:00Z
+weight = 3
+
+[taxonomies]
 tags = ["C", "JavaScript", "Data Viz"]
 
 +++

@@ -1,8 +1,11 @@
 +++
 title = "Creating and Deploying a Middleman Blog, Part 3: Deployment"
 date = 2014-09-29T02:04:00Z
-tags = ["Ruby", "Middleman", "Deployment"]
+weight = 100
 summary = "The beautiful thing about static site generators is the portability, you can just throw it on any server that's public facing and can serve files and it just works. That said there are certain practices that can make your life easier, and deploy your sites safely with versioning and without ever having to touch an FTP client. I'm going to talk about one of many of these possible configurations, Heroku with Puma."
+
+[taxonomies]
+tags = ["Ruby", "Middleman", "Deployment"]
 
 +++
 

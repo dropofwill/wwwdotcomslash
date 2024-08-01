@@ -1,6 +1,9 @@
 +++
 title = "rtasklib first release"
 date = 2015-05-19T14:31:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Ruby", "rtasklib", "LinuxDev", "Business and Legal"]
 
 +++

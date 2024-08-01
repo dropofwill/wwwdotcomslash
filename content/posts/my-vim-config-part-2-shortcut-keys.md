@@ -1,6 +1,9 @@
 +++
 title = "My Vim Config Part 2: Shortcut Keys"
 date = 2014-11-15T04:53:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Vim", "Config"]
 
 +++

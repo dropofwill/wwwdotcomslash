@@ -1,6 +1,9 @@
 +++
 title = "Initial thoughts for an MPD project"
 date = 2015-02-05T21:30:00Z
+weight = 100
+
+[taxonomies]
 tags = ["LinuxDev", "Business and Legal", "Ruby"]
 
 +++

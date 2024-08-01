@@ -1,6 +1,9 @@
 +++
 title = "task_time update March 1st"
 date = 2015-03-02T02:16:00Z
+weight = 100
+
+[taxonomies]
 tags = ["LinuxDev", "Ruby", "task_time", "rtasklib"]
 
 +++

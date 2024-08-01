@@ -1,6 +1,9 @@
 +++
 title = "A Comparison of Task Warrior Wrappers"
 date = 2015-02-22T20:54:00Z
+weight = 10
+
+[taxonomies]
 tags = ["LinuxDev", "task_time"]
 
 +++

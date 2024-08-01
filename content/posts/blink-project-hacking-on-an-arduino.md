@@ -1,6 +1,9 @@
 +++
 title = "Blink project: Hacking on an Arduino"
 date = 2015-02-11T02:35:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Physical Computing", "Arduino"]
 
 +++

@@ -1,6 +1,9 @@
 +++
 title = "Sankey diagram of rule distributions for word sense disambiguation"
 date = 2014-11-15T06:14:00Z
+weight = 2
+
+[taxonomies]
 tags = ["NLP", "Semantics", "Data Viz"]
 
 +++

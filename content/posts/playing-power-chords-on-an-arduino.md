@@ -1,6 +1,9 @@
 +++
 title = "Playing power chords on an Arduino"
 date = 2015-04-14T01:13:00Z
+weight = 100
+
+[taxonomies]
 tags = ["Physical Computing", "Arduino"]
 
 +++

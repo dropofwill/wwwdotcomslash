@@ -1,6 +1,9 @@
 +++
 title = "Word Sense Disambiguation with Python"
 date = 2014-10-13T01:48:00Z
+weight = 4
+
+[taxonomies]
 tags = ["NLP", "Python", "Semantics"]
 
 +++
