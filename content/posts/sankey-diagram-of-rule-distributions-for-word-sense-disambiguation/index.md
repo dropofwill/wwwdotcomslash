@@ -64,12 +64,12 @@ The most obvious observation from this visualization is just how many low likeli
 
 One major assumption in this algorithm is that higher likelihood will have better results, how good is this assumption? We can't tell that from the confusion matrix, but with the Sankey diagram every incorrect answer can be traced back to the rule's likelihood that made a mistake. Here we can see that no rule with a likelihood greater than 5 ever makes a mistake in both cases, which shows that the assumption is not only pretty good, but also consistent across use cases.
 
-<%= image_tag image_path("first-attempt.svg"), alt: "Reign-Gold tree as a first attempt", style: "width: 66%; float: right" %>
 
 Another takeaway is how few rules we have for the sake\* case and also how low in the decision list those that exist are. This shows an non-obvious limitation of the algorithm, it needs similar distributions of data. Even though this algorithm performed "better" in overall accuracy then the bass case, it still only got 50% of the sake as in wine cases correct.
 
-My first attempt (incomplete version shown to the *right*) was the straight forward Reign-Gold tree diagram with labelled nodes. This admittedly shows the exact numbers immediately (without hover over), but it loses the high level visual cues of size and is not interpreted necessarily as a temporal flow like the Sankey approach.
+![Reign-Gold tree as a first attempt](first-attempt.svg)
 
+My first attempt (incomplete version above) was the straight forward Reign-Gold tree diagram with labelled nodes. This admittedly shows the exact numbers immediately (without hover over), but it loses the high level visual cues of size and is not interpreted necessarily as a temporal flow like the Sankey approach.
 
 <style>
 
@@ -132,8 +132,8 @@ path.chord {
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
 <!--The D3 plugin for Sankey diagrams-->
-<%= javascript_include_tag 'sankey' %>
-<%= javascript_include_tag 'sankey_has_many' %>
+<script src="sankey.js" type="text/javascript"></script>
+<script src="sankey_has_many.js" type="text/javascript"></script>
 <!-- Render nice latex formulas -->
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 
@@ -154,7 +154,7 @@ path.chord {
       .height(height)
       ;
 
-    d3.json("../../../../javascripts/bass.json", function(data1) {
+    d3.json("bass.json", function(data1) {
       var svg = d3.select("#bass").append("svg");
       svg.datum(data1).call(sankeyBass);
 
@@ -176,7 +176,7 @@ path.chord {
         .text("Accuracy per Test Case");
     });
 
-    d3.json("../../../../javascripts/sake.json", function(data1) {
+    d3.json("sake.json", function(data1) {
       var svg = d3.select("#sake").append("svg");
       svg.datum(data1).call(sankeySake);
 
