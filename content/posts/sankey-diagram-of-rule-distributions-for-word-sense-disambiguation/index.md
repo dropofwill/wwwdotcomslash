@@ -129,13 +129,11 @@ path.chord {
 }
 
 </style>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js" integrity="sha512-oJp0DdQuQQrRsKVly+Ww6fAN1GwJN7d1bi8UubpEbzDUh84WrJ2CFPBnT4LqBCcfqTcHR5OGXFFhaPe3g1/bzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!--The D3 plugin for Sankey diagrams-->
 <script src="sankey.js" type="text/javascript"></script>
+<!-- visualization code -->
 <script src="sankey_has_many.js" type="text/javascript"></script>
-<!-- Render nice latex formulas -->
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 
 <script type="text/javascript">
     var sankeyBass = SankeyHasMany(),

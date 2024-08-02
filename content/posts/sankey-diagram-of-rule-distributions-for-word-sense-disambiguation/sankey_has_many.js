@@ -5,7 +5,8 @@ function SankeyHasMany() {
   var my = {
     margin: {top: 20, right: 1, bottom: 6, left: 1},
     formatFloat: d3.format(",.0f"),
-    color: d3.scale.ordinal().range(colorbrewer.Dark2[8]),
+    // from ["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"] dark8
+    color: d3.scale.ordinal().range(["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"]),
     nodeWidth: 15,
     nodePadding: 10,
     forceIterations: 10,
